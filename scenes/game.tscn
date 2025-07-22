@@ -223,6 +223,8 @@ position = Vector2(0, -1)
 [node name="Camera2D" type="Camera2D" parent="Player"]
 position = Vector2(0, -9)
 zoom = Vector2(4, 4)
+limit_bottom = 90
+limit_smoothed = true
 position_smoothing_enabled = true
 
 [node name="Platform" parent="." instance=ExtResource("3_lnu2h")]
@@ -245,3 +247,9 @@ position = Vector2(201, 34)
 
 [node name="Coin3" parent="." instance=ExtResource("4_lbhrr")]
 position = Vector2(217, 34)
+
+[node name="Coin4" parent="." instance=ExtResource("4_lbhrr")]
+position = Vector2(74, -76)
+
+[node name="Coin5" parent="." instance=ExtResource("4_lbhrr")]
+position = Vector2(505, 1)
