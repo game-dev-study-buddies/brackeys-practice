@@ -1,10 +1,11 @@
-[gd_scene load_steps=12 format=3 uid="uid://bhgi18v4rm25t"]
+[gd_scene load_steps=13 format=3 uid="uid://bhgi18v4rm25t"]
 
 [ext_resource type="PackedScene" uid="uid://bh8uov0ecnaif" path="res://scenes/player.tscn" id="1_uwrxv"]
 [ext_resource type="Texture2D" uid="uid://bmfrn4w8ei6h6" path="res://assets/sprites/world_tileset.png" id="2_yqjtg"]
 [ext_resource type="PackedScene" uid="uid://d0qy51f0ssuco" path="res://scenes/platform.tscn" id="3_lnu2h"]
 [ext_resource type="PackedScene" uid="uid://b7fbvg6pq5bfe" path="res://scenes/coin.tscn" id="4_lbhrr"]
 [ext_resource type="PackedScene" uid="uid://01y2c1bvodlq" path="res://scenes/killzone.tscn" id="5_iywne"]
+[ext_resource type="PackedScene" uid="uid://b3f8gl6wektwi" path="res://scenes/slime.tscn" id="6_p57ef"]
 
 [sub_resource type="TileSetAtlasSource" id="TileSetAtlasSource_lnu2h"]
 texture = ExtResource("2_yqjtg")
@@ -269,3 +270,6 @@ libraries = {
 &"": SubResource("AnimationLibrary_iywne")
 }
 autoplay = "move"
+
+[node name="Slime" parent="." instance=ExtResource("6_p57ef")]
+position = Vector2(553, 48)
